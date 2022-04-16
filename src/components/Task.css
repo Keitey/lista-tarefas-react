@@ -22,6 +22,12 @@
     margin: 0 5px;
 }
 
+.remove-task-button:hover,
+.see-task-details-button:hover{
+    color: hsl(317 100% 54%);
+}
+
+
 .buttons-container{
     width: 30%;
     display: flex;
