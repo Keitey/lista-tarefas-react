@@ -42,10 +42,6 @@ const App = () => {
       },
     ];
 
-    if(newTasks.value.length === '') {
-      return;
-    }
-	
     setTasks(newTasks);
   };
 
@@ -54,8 +50,6 @@ const App = () => {
 
     setTasks(newTasks);
   };
-
-
 
   return (
     <Router>
