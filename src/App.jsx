@@ -41,7 +41,7 @@ const App = () => {
         completed: false,
       },
     ];
-
+    
     setTasks(newTasks);
   };
 
