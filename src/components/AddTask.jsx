@@ -20,7 +20,7 @@ const AddTask = ({ handleTaskAddition }) => {
       setInputData("");
     }
   });
-  
+
   return (
     <div className="add-task-container">
       <input

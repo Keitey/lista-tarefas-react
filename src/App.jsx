@@ -41,6 +41,10 @@ const App = () => {
         completed: false,
       },
     ];
+
+    if(newTasks.value.length === '') {
+      return;
+    }
 	
     setTasks(newTasks);
   };
