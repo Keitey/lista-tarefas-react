@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import { ToastContainer } from 'react-toastify';
 
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
@@ -9,6 +10,7 @@ import AddTask from "./components/AddTask";
 import TaskDetails from "./components/TaskDetails";
 
 import "./App.css";
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   const [tasks, setTasks] = useState([]);
@@ -71,6 +73,7 @@ const App = () => {
         />
         <Route path="/:taskTitle" exact component={TaskDetails} />
       </div>
+      <ToastContainer autoClose={3000}/>
     </Router>
   );
 };

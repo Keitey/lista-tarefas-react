@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { toast } from 'react-toastify';
+
 import "./AddTask.css";
 import Button from "./Button";
 
@@ -10,8 +12,8 @@ const AddTask = ({ handleTaskAddition }) => {
   };
 
   const handleAddTaskClick = (e) => {
+    toast.info('Não é possível adicionar uma tarefa em branco!')
     if (inputData === "") {
-      alert("Não é possível adiconar uma tarefa em branco!");
       return;
     } else {
       handleTaskAddition(inputData);
@@ -23,7 +25,7 @@ const AddTask = ({ handleTaskAddition }) => {
     if (inputData === "" && e.key === "Enter") {
       return setInputData("");
     }
-    if(e.key === "Enter") {
+    if (e.key === "Enter") {
       handleTaskAddition(inputData);
       setInputData("");
     }
