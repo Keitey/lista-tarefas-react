@@ -7,23 +7,23 @@ const AddTask = ({ handleTaskAddition }) => {
 
   const handleInputChange = (e) => {
     setInputData(e.target.value);
- 
   };
 
   const handleAddTaskClick = (e) => {
-    if(inputData === "") {
+    if (inputData === "") {
+      alert("Não é possível adiconar uma tarefa em branco!");
       return;
-    }else{
+    } else {
       handleTaskAddition(inputData);
       setInputData("");
     }
   };
 
   document.addEventListener("keydown", function (e) {
-    if(inputData === "" && e.key === "Enter") {
+    if (inputData === "" && e.key === "Enter") {
       return setInputData("");
     }
-    if (e.key === "Enter") {
+    if(e.key === "Enter") {
       handleTaskAddition(inputData);
       setInputData("");
     }
