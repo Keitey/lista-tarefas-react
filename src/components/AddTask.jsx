@@ -12,8 +12,8 @@ const AddTask = ({ handleTaskAddition }) => {
   };
 
   const handleAddTaskClick = (e) => {
-    toast.info('Não é possível adicionar uma tarefa em branco!')
     if (inputData === "") {
+      toast.info('Não é possível adicionar uma tarefa em branco!')
       return;
     } else {
       handleTaskAddition(inputData);
