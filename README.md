@@ -2,7 +2,7 @@
 
 # Lista de tarefas
 
-Este projeto de uma lista de tarefas foi feito com Reactjs, utilizando o axios para consumo da API responsável por gerar as tasks, uso do toastify para um alerta dinâmico quando o usuário clicar no botão sem ter escrito uma tarefa informando-o que não é possível add tasks nulas, o usuário pode escrever a tarefa que deseja adicionar e e clicar no enter para completar a ação, sem a necessidade de clicar no botão se assim não desejar.
+Este projeto de uma lista de tarefas foi feito com Reactjs, utilizando o axios para consumo da API responsável por gerar as tasks, uso do toastify para um alerta dinâmico quando o usuário clicar no botão sem ter escrito uma tarefa informando-o que não é possível add tasks nulas, o usuário pode escrever a tarefa que deseja adicionar e clicar no enter para completar a ação, sem a necessidade de clicar no botão se assim não desejar.
 Toda vez que ele clicar numa tarefa para marcá-la como concluída sua borda fica verde, ele pode excluir uma tarefa clicando no "x" ou clicar no ícone de informação para entrar na task e ver os detalhes dela.
 
 
